@@ -12,7 +12,7 @@ import java.net.MalformedURLException;
 public class Sound {
     AudioClip myClip ;
     public Sound(String fileName) {
-        fileName = "."+File.separator+"Sounds"+File.separator+fileName;
+        fileName = "."+File.separator+"a3"+File.separator+"Sounds"+File.separator+fileName;
         try {
             File file = new File(fileName);
             if (file.exists()) {
