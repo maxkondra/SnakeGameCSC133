@@ -158,25 +158,25 @@ public class GameWorld implements IObservable, IGameWorld, ActionListener {
     }
 
     public void goNorth() {
-        snake.getSnakeHead().steer(90);
+        snake.getSnakeHead().steer(270);
         System.out.println("Snake is moving North!");
         notifyObservers();
     }
 
     public void goSouth() {
-        snake.getSnakeHead().steer(270);
+        snake.getSnakeHead().steer(90);
         System.out.println("Snake is moving South!");
         notifyObservers();
     }
 
     public void goEast() {
-        snake.getSnakeHead().steer(180);
+        snake.getSnakeHead().steer(0);
         System.out.println("Snake is moving East!");
         notifyObservers();
     }
 
     public void goWest() {
-        snake.getSnakeHead().steer(0);
+        snake.getSnakeHead().steer(180);
         System.out.println("Snake is moving West!");
         notifyObservers();
     }
